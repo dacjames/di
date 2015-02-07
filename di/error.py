@@ -1,0 +1,3 @@
+
+class InjectionError(Exception):
+    pass

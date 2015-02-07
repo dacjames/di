@@ -14,7 +14,3 @@ Image you have a database client object.  Creating this object in a mature syste
 
 Plumbing instances around a large program is both annoying and time consuming, which often encourage less-than-optimal design decisions.  If you have ever had to add an argument to a chain of function calls, you know the pain.  `di.py` allows objects to be injected into any function or class regardless of the path from the point of creation to the point of use.  This also makes it easy to distribute mock objects without having to write code with this in mind.
 
-## How does DI work?
-
-`di.js` provides two decorators: `provide` and `inject`.  `provide` can be used to decorate a class or function, thus defining the creation process of a **component**.  Any function or method that depends on a component, i.e. wants to recieve it as an argument, is decorated with `inject`.
-
